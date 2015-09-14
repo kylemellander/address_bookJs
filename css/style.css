@@ -2,12 +2,12 @@
   display: none;
 }
 
-.contact {
+.contact, .add-address {
   color: red;
   cursor: not-allowed;
 }
 
-.contact:hover {
+.contact:hover, .add-address:hover {
   color: green;
   text-decoration: line-through;
 }
