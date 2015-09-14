@@ -30,7 +30,7 @@ $(document).ready(function() {
       newContact.addresses.push(newAddress);
     })
 
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span> - <span class='add-address'>Add an address</span><div class='add-address-form'></div></li>");
+    $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
 
 
     $("#new-first-name").val("");
@@ -46,7 +46,7 @@ $(document).ready(function() {
       $(".last-name").text(newContact.lastName);
       $("ul#addresses").text("");
       newContact.addresses.forEach(function(address) {
-        $("ul#addresses").append("<li>" + address.street + ", " + address.city + ", " + address.state + "</li>");
+        $("ul#addresses").append("<li>" + address.street + "<br>" + address.city + ", " + address.state + "</li>");
       });
     });
 
