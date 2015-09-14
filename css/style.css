@@ -1,0 +1,13 @@
+.show-contact {
+  display: none;
+}
+
+.contact {
+  color: red;
+  cursor: not-allowed;
+}
+
+.contact:hover {
+  color: green;
+  text-decoration: line-through;
+}
